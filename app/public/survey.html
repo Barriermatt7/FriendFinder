@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+
+    <title>Friend Finder Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg text-center mt-4">
+                <h2>Personality Survey Questions</h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputNameBox" class="col-sm-2 col-form-label">Name (Required)</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputNameBox" placeholder="Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email (Required)</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <!-- First question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #1</b></legend>
+                            <div class="col-sm-10">
+                                I make friends easily.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio1" value="1">
+                                    <label class="form-check-label" for="q1Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio2" value="2">
+                                    <label class="form-check-label" for="q1Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio3" value="3">
+                                    <label class="form-check-label" for="q1Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio4" value="4">
+                                    <label class="form-check-label" for="q1Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio5" value="5">
+                                    <label class="form-check-label" for="q1Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Second question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #2</b></legend>
+                            <div class="col-sm-10">
+                                I have a vivid imagination.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio1" value="1">
+                                    <label class="form-check-label" for="q2Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio2" value="2">
+                                    <label class="form-check-label" for="q2Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio3" value="3">
+                                    <label class="form-check-label" for="q2Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio4" value="4">
+                                    <label class="form-check-label" for="q2Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio5" value="5">
+                                    <label class="form-check-label" for="q2Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Third question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #3</b></legend>
+                            <div class="col-sm-10">
+                                I love excitement.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio1" value="1">
+                                    <label class="form-check-label" for="q3Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio2" value="2">
+                                    <label class="form-check-label" for="q3Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio3" value="3">
+                                    <label class="form-check-label" for="q3Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio4" value="4">
+                                    <label class="form-check-label" for="q3Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio5" value="5">
+                                    <label class="form-check-label" for="q3Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fourth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #4</b></legend>
+                            <div class="col-sm-10">
+                                I love large parties.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio1" value="1">
+                                    <label class="form-check-label" for="q4Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio2" value="2">
+                                    <label class="form-check-label" for="q4Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio3" value="3">
+                                    <label class="form-check-label" for="q4Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio4" value="4">
+                                    <label class="form-check-label" for="q4Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio5" value="5">
+                                    <label class="form-check-label" for="q4Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fifth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #5</b></legend>
+                            <div class="col-sm-10">
+                                I take charge.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio1" value="1">
+                                    <label class="form-check-label" for="q5Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio2" value="2">
+                                    <label class="form-check-label" for="q5Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio3" value="3">
+                                    <label class="form-check-label" for="q5Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio4" value="4">
+                                    <label class="form-check-label" for="q5Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio5" value="5">
+                                    <label class="form-check-label" for="q5Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Sixth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #6</b></legend>
+                            <div class="col-sm-10">
+                                I like dogs.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio1" value="1">
+                                    <label class="form-check-label" for="q6Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio2" value="2">
+                                    <label class="form-check-label" for="q6Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio3" value="3">
+                                    <label class="form-check-label" for="q6Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio4" value="4">
+                                    <label class="form-check-label" for="q6Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio5" value="5">
+                                    <label class="form-check-label" for="q6Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Seventh question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #7</b></legend>
+                            <div class="col-sm-10">
+                                I like cats.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio1" value="1">
+                                    <label class="form-check-label" for="q7Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio2" value="2">
+                                    <label class="form-check-label" for="q7Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio3" value="3">
+                                    <label class="form-check-label" for="q7Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio4" value="4">
+                                    <label class="form-check-label" for="q7Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio5" value="5">
+                                    <label class="form-check-label" for="q7Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Eighth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #8</b></legend>
+                            <div class="col-sm-10">
+                                I trust others.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio1" value="1">
+                                    <label class="form-check-label" for="q8Radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio2" value="2">
+                                    <label class="form-check-label" for="q8Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio3" value="3">
+                                    <label class="form-check-label" for="q8Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio4" value="4">
+                                    <label class="form-check-label" for="q8Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio5" value="5">
+                                    <label class="form-check-label" for="q8Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Ninth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #9</b></legend>
+                            <div class="col-sm-10">
+                                I complete tasks successfully.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9Radios" id="q9radio1" value="1">
+                                    <label class="form-check-label" for="q9radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9Radios" id="q9Radio2" value="2">
+                                    <label class="form-check-label" for="q9Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9Radios" id="q9Radio3" value="3">
+                                    <label class="form-check-label" for="q9Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9Radios" id="q9Radio4" value="4">
+                                    <label class="form-check-label" for="q9Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question9Radios" id="q9Radio5" value="5">
+                                    <label class="form-check-label" for="q9Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Tenth question -->
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0"><b>Question #10</b></legend>
+                            <div class="col-sm-10">
+                                I like SMU's Coding Boot Camp.<br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10Radios" id="q10radio1" value="1">
+                                    <label class="form-check-label" for="q10radio1">
+                                        1 (Strongly Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10Radios" id="q10Radio2" value="2">
+                                    <label class="form-check-label" for="q10Radio2">
+                                        2 (Disagree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10Radios" id="q10Radio3" value="3">
+                                    <label class="form-check-label" for="q10Radio3">
+                                        3 (Neutral)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10Radios" id="q10Radio4" value="4">
+                                    <label class="form-check-label" for="q10Radio4">
+                                        4 (Agree)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="question10Radios" id="q10Radio5" value="5">
+                                    <label class="form-check-label" for="q10Radio5">
+                                        5 (Strongly Agree)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+        // Form validation
+        function validateForm() {
+            console.log("Starting validation check..\n");
+            var isValid = true;
+            $(".form-control").each(function () {
+                console.log("testing $(this).val():   " + $(this).val());
+                if ($(this).val() === "") {
+                    console.log("Found empty value, setting isValid false");
+                    isValid = false;
+                }
+            });
+            for (var x = 1; x <= 10; x++) {
+                console.log("Starting for loop to test radio buttons\n");
+                console.log("What is $('input:radio[name='question" + x + "Radios']:checked').val() value:  " + $('input:radio[name="question' + x + 'Radios"]:checked').val());
+                if (typeof $('input:radio[name="question' + x + 'Radios"]:checked').val() === "undefined") {
+                    console.log("False value found at question" + x + "Radios");
+                    isValid = false;
+                }
+            }
+            console.log("isValid value:  " + isValid);
+            return isValid;
+        }
+        // Here we grab the form elements
+        if (validateForm()) {
+            var newSurveyTaker = {
+                Name: $("#inputNameBox").val().trim(),
+                Email: $("#inputEmail").val().trim(),
+                Scores: [
+                    $('input:radio[name="question1Radios"]:checked').val(),
+                    $('input:radio[name="question2Radios"]:checked').val(),
+                    $('input:radio[name="question3Radios"]:checked').val(),
+                    $('input:radio[name="question4Radios"]:checked').val(),
+                    $('input:radio[name="question5Radios"]:checked').val(),
+                    $('input:radio[name="question6Radios"]:checked').val(),
+                    $('input:radio[name="question7Radios"]:checked').val(),
+                    $('input:radio[name="question8Radios"]:checked').val(),
+                    $('input:radio[name="question9Radios"]:checked').val(),
+                    $('input:radio[name="question10Radios"]:checked').val()
+                ]
+            };
+            console.log(newSurveyTaker);
+            // This line is the magic. It"s very similar to the standard ajax function we used.
+            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+            // The callback is the response of the server. 
+            $.post("/api/friends", newSurveyTaker,
+                function (data) {
+                    // Clear the form when submitting
+                    $("#inputNameBox").val("");
+                    $("#inputEmail").val("");
+                    $("question1Radios").attr('checked', false);
+                    $("question2Radios").attr('checked', false);
+                    $("question3Radios").attr('checked', false);
+                    $("question4Radios").attr('checked', false);
+                    $("question5Radios").attr('checked', false);
+                    $("question6Radios").attr('checked', false);
+                    $("question7Radios").attr('checked', false);
+                    $("question8Radios").attr('checked', false);
+                    $("question9Radios").attr('checked', false);
+                    $("question10Radios").attr('checked', false);
+                });
+        }
+        else {
+            alert("Please fill out all fields before submitting!");
+        }
+    });
+</script>
