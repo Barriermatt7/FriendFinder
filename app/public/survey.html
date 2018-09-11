@@ -47,7 +47,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #1</b></legend>
                             <div class="col-sm-10">
-                                I make friends easily.<br>
+                                I enjoy long walks on the beach?<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question1Radios" id="q1Radio1" value="1">
                                     <label class="form-check-label" for="q1Radio1">
@@ -87,7 +87,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #2</b></legend>
                             <div class="col-sm-10">
-                                I have a vivid imagination.<br>
+                                I believe in astrological charts?<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question2Radios" id="q2Radio1" value="1">
                                     <label class="form-check-label" for="q2Radio1">
@@ -127,7 +127,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #3</b></legend>
                             <div class="col-sm-10">
-                                I love excitement.<br>
+                                I enjoy going to the movies.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question3Radios" id="q3Radio1" value="1">
                                     <label class="form-check-label" for="q3Radio1">
@@ -167,7 +167,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #4</b></legend>
                             <div class="col-sm-10">
-                                I love large parties.<br>
+                                I enjoy getting hammered at the bar all night.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question4Radios" id="q4Radio1" value="1">
                                     <label class="form-check-label" for="q4Radio1">
@@ -207,7 +207,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #5</b></legend>
                             <div class="col-sm-10">
-                                I take charge.<br>
+                                I loive to travel.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question5Radios" id="q5Radio1" value="1">
                                     <label class="form-check-label" for="q5Radio1">
@@ -247,7 +247,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #6</b></legend>
                             <div class="col-sm-10">
-                                I like dogs.<br>
+                                I love to work.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question6Radios" id="q6Radio1" value="1">
                                     <label class="form-check-label" for="q6Radio1">
@@ -287,7 +287,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #7</b></legend>
                             <div class="col-sm-10">
-                                I like cats.<br>
+                                I enjoy out door activities.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question7Radios" id="q7Radio1" value="1">
                                     <label class="form-check-label" for="q7Radio1">
@@ -327,7 +327,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #8</b></legend>
                             <div class="col-sm-10">
-                                I trust others.<br>
+                                I enjoy video games.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question8Radios" id="q8Radio1" value="1">
                                     <label class="form-check-label" for="q8Radio1">
@@ -367,7 +367,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #9</b></legend>
                             <div class="col-sm-10">
-                                I complete tasks successfully.<br>
+                                I am a smoker.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question9Radios" id="q9radio1" value="1">
                                     <label class="form-check-label" for="q9radio1">
@@ -408,7 +408,7 @@
                         <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0"><b>Question #10</b></legend>
                             <div class="col-sm-10">
-                                I like SMU's Coding Boot Camp.<br>
+                                I love going to concerts.<br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="question10Radios" id="q10radio1" value="1">
                                     <label class="form-check-label" for="q10radio1">
@@ -482,9 +482,7 @@
 
 <script type="text/javascript">
     // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+    
     $(".submit").on("click", function (event) {
         event.preventDefault();
         // Form validation
@@ -528,9 +526,7 @@
                 ]
             };
             console.log(newSurveyTaker);
-            // This line is the magic. It"s very similar to the standard ajax function we used.
-            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-            // The callback is the response of the server. 
+            
             $.post("/api/friends", newSurveyTaker,
                 function (data) {
                     // Clear the form when submitting

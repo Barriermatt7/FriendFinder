@@ -1,48 +1,53 @@
 //Load Data
 
-var friends = require("../data/friendsData");
+var friendsData = require("../data/friends");
 
 //Routing
 
 module.exports = function(app) {
 
     app.get("/api/friends", function(req, res) {
-        res.json(friends);
+        res.json(friendsData);
       });
 
 // API POST Requests
 //****Enter compatibility logic for survey reults see readme
 
-app.post("/api/friends", function(req, res) {
-    var newFriendScores = req.body.scores;
-    var scoresArray = [];
-    var friendCount = 0;
-    var bestMatch = 0;
+app.post("/api/friends", function (req, res) {
+  
+    var match = {
+      name: "",
+      photo: "",
+      bestDiff: 1000
+    };
 
-    //runs through all current friends in list
-    for(var i=0; i<friendArray.length; i++){
-      var scoresDiff = 0;
-    
-      for(var f=0; f<newFriendScores.length; f++){
-        scoresDiff += (Math.abs(parseInt(friendList[i].scores[f]) - parseInt(newFriendScores[f])));
-      }
-    
-      scoresArray.push(scoresDiff);
-    }
+    //console.log(req.body);
 
-    //compares matches
-    for(var i=0; i<scoresArray.length; i++){
-      if(scoresArray[i] <= scoresArray[bestMatch]){
-        bestMatch = i;
-      }
-    }
+        var user = req.body;
+        var score = user.Scores;
+        var theDifference;
+//console.log("friendsData")
+//console.log(friendsData)
+//console.log("score")
+//console.log(score)
+        for (var i = 0; i < friendsData.length; i++) {
+          //  console.log(friendsData[i]);
+            theDiffference = 0;
 
-    var bm = friendList[bestMatch];
-    res.json(bm);
+            for (var j = 0; j < score.length; j++) {
+            theDifference += Math.abs(score[j] - friendsData[i].scores[j]);
+//console.log("submitted score ", score[i])
+//console.log("friend score", friendsData[i].score[j])
+            if (theDifference <= match.difference) {
+                match.name = friendsData[i].name;
+                match.photo = friendsData[i].photo;
+                match.difference = theDifference;
+            }
+            }
+        }
+        friendsData.push(user);
+        res.json(match);
 
-    friendList.push(req.body);
-  });
-};
 
-
-    
+    });
+  };

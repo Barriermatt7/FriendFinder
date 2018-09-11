@@ -21,7 +21,8 @@ app.use(bodyParser.json());
 
 //Routing
 
-require("./app/routing/apiRoutes")(app);
+var friendsData = require("./app/data/friends.js");
+require("./app/routing/apiRoutes")(app, friendsData);
 require("./app/routing/htmlRoutes")(app);
 
 
